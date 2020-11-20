@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="survey.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Kindergarten Survey Form</title>
+  </head>
+  
+  <body>
+    <main>
+  
+        <div class="container">
+        <header class="header"> 
+        <h1 id="title" class="text-center"> First year of Kindergarten parent survey</h1>
+          <p id="description" class="text-center">This information will help us to better undertand your child.<br>The more we know, the better we can work to meet his/her needs.<br>Please answer the questions below!<br>Thank you!</p>
+          </header>
+        
+          <form id="survey-form">
+            <div class="form-group">
+            <label id="name-label" for="name">* Name of the child</label>
+              <input id="name" 
+                     class="form-control"
+                     type="text" 
+                     name="name" 
+                     required 
+                     placeholder="Enter child's name"> 
+            </div>
+              <div class="form-group">
+                <label id="name-parent-label" for name-parent> * Name of parent</label> 
+              <input id"name-parent"
+                     class="form-control"
+                     type="text" 
+                     name="name-parent" 
+                     required 
+                     placeholder="Enter your name">
+              </div>
+            <div class="form-group">
+              <label id="email-label"for name>* E-mail of parent</label>
+          <input id="email" 
+                 class="form-control"
+                 type="email" 
+                 required 
+                 name= "email" 
+                 placeholder="Enter your e-mail">
+              </div>
+            <div class="form-group">
+            <label id="phone-label"for phone>* Phone number</label>
+          <input id="phone" 
+                 class="form-control"
+                 type="tel" 
+                 required 
+                 name= "phone" 
+                 placeholder="e.g. 0888123456" 
+                 maxlength="10">
+            </div>
+            <div class="form-group">
+            <label id="number-label"for name>Age of parent</label>
+          <input id="number"
+                 class="form-control"
+                 type="number" 
+                 name="number" 
+                 min="16" 
+                 max="77" 
+                 placeholder="Enter your age">
+              </div>
+            <!-- dropdown menu-->
+            <div class="form-group">
+            <p>* Please select the group your child is attending</p>
+        <select id="dropdown"
+                name="group-name"
+                class="form-control"
+                required>
+          <option value="palavnitsi">Palavnitsi</option>
+          <option value="morska-zvezdichka">Morska zvezda</option>
+          <option value="lavcheta">Lavcheta</option>
+          <option value="morsko-konche">Morsko konche</option>
+          <option value="pinokio">Pinokio</option>
+          <option value="lyuboznayko">Lyuboznayko</option>
+          <option value="delfincheta">Delfincheta</option>
+          <option value="slantse">Slantse</option>
+        </select>
+              </div>
+             <!-- nickname-->
+            <div class="form-group">
+            <p> Does your child have a nickname? If so, what is it?</p>
+            <input id="nickname"
+                   class="form-control"
+                   type="text" 
+                   name= "nickname"
+                   placeholder="Child's nickname">
+            </div>
+             <!-- radio buttons menu-->
+            <div class="form-group">
+            <p id="allergies"> * Does your child have any kind of allergies or food intolerances?</p>
+        <label for="-allergy-yes">
+         <input id="allergy-yes"
+                class="input-radio"
+                type="radio" 
+                name="allergy" 
+                value="allergy-yes"> Yes</label>
+        <label id="allergy-no" for allergy> 
+          <input id="allergy-no"
+                 class="input-radio"
+                 type="radio" 
+                 name="allergy" 
+                 value="allergy-no"> No 
+              </label></div>
+            <div class="form-group">
+        <p>If the answer is yes, please tell us what it is.</p>
+          <textarea id="allergy-description" 
+                      name="allergy-description" 
+                      class="input-textarea"
+                    placeholder="Enter type of allergy/ food intolerance..."></textarea>
+            </div>
+            
+            <!-- Diaper-->
+            
+              <!-- checkbox menu-->
+            <div class="form-group">
+           <p> * Is your child potty-trained? </p>
+          <label for="yes">
+            <input id="diapers-yes"
+                   class="input-radio"
+                   type="radio" 
+                   name="diapers" 
+                   value="shy"> Yes
+            </label>
+          <label for="diapers-no">
+            <input id="diapers-no"
+                   class="input-radio"
+                   type="radio" 
+                   name="diapers" 
+                   value="no"> No
+            </label>
+          <label for="partly">
+            <input id="partly"
+                   class="input-radio"
+                   type="radio" 
+                   name="diapers" 
+                   value="partly"> Partly
+            </label>
+            </div>
+            <!-- textarea -->
+            <div class="form-group">
+        <p>Please mention 3 or more words that best describe your child's personality.</p>
+        <textarea id="personality" 
+                  name="personality" 
+                  class="input-textarea"
+                  placeholder="Enter personality description here..."
+                  ></textarea>
+                  </div>
+            <!--checkbox -->
+            <div class="form-group">
+            <p id="activities">Which of the following activities does your child enjoy the most?<br> <span id="clue">(You can select multiple choices.) </span></p>
+              <label for="reading"> 
+            <input type="checkbox"
+                   class="input-checkbox"
+                   id="reading" 
+                   name="activity" 
+                   value="reading">Reading a fairytail or story in a book
+          </label>
+              <label for="tv"> 
+            <input type="checkbox"
+                   class="input-checkbox"
+                   id="tv" 
+                   name="activity" 
+                   value="tv">Watching TV
+          </label>
+               <label for="dancing"> 
+            <input type="checkbox"
+                   class="input-checkbox"
+                   id="dancing" 
+                   name="activity" 
+                   value="dancing">Dancing
+         </label>
+              <label for="singing"> 
+            <input type="checkbox"
+                   class="input-checkbox"
+                   id="singing" 
+                   name="activity" 
+                   value="singing">Singing
+          </label>
+              <label for="drawing"> 
+            <input type="checkbox"
+                   class="input-checkbox"
+                   id="drawing" 
+                   name="activity" 
+                   value="drawing">Drawing
+          </label>
+            </div>
+            <!--Favorites -->
+            <div class="form-group">
+            <p>What is your child's favorite toy?</p>
+          <input id="toy"
+                 class="form-control"
+                 type="text" 
+                 name= "toy"
+                 placeholder="Enter toy">
+            </div>
+            <div class="form-group">
+            <p>What is your child's favorite fairytail?</p>
+          <input id="fairytail"
+                 class="form-control"
+                 type="text" 
+                 name= "fairytail"
+                 placeholder="Enter fairytail">
+            </div>
+           <!--additional info-->
+            <div class="form-group">
+            <p>Would you like to share more information?</p>
+                   <textarea id="additional"
+                             class="input-textarea"
+                             name="add" 
+                             placeholder="Enter your comment here..."></textarea>
+              </div>  
+                <!-- submit -->
+            <div class="form-group">
+            <p class="text-center"> Please finish the survey by clicking the submit button!<br>Thank you for your time!</p> 
+        <button type="submit" 
+                id="submit">Submit</button>
+            </div>
+               </form>
+         
+          </div>
+          </main>
+      </body>
+      </html>
